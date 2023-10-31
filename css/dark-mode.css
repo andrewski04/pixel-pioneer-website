@@ -1,9 +1,9 @@
 :root {
-  --bg-color: white;
-  --txt-color: black;
-  --nav-bg-color: #999;
-  --nav-hover-bg-color: #CEAB59;
-  --nav-hover-txt-color: #FA0086;
+  --bg-color: #474747;
+  --txt-color: white;
+  --nav-bg-color: #292929;
+  --nav-hover-bg-color: #A30057;
+  --nav-hover-txt-color: #CEAB59;
 }
 
 .title {
