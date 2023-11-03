@@ -1,7 +1,7 @@
 :root {
   --bg-color: white;
   --txt-color: black;
-  --nav-bg-color: #999;
+  --nav-bg-color: lightgray;
   --nav-hover-bg-color: #CEAB59;
   --nav-hover-txt-color: #FA0086;
 }
