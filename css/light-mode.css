@@ -1,7 +1,7 @@
 /*
 		Author:				Pixel Pioneers (Andrew, Elvin, Riley, Landon, Roy Robinson Jr III) 
 		Creation Date:		10-31-2023
-		Last revised:		10-31-2023
+		Last revised:		11-10-2023
 		Assignment:			Website Project
 */
 
@@ -9,15 +9,15 @@
   --bg-color: white;
   --txt-color: black;
   --nav-bg-color: lightgray;
-  --nav-hover-bg-color: #CEAB59;
   --nav-hover-txt-color: #FA0086;
+  --border-color: #CEAB59;
 }
 
 .title {
   color: var(--txt-color);
   margin-top: 10%;
   font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 3rem;
+  font-size: 300%;
   text-align: center;
 }
 
@@ -28,9 +28,9 @@
 }
 
 body {
+  width: 80%;
   background-color: var(--bg-color);
-  float: center;
-  margin: 0;
+  margin: 0 10% 0 10%;
 }
 
 header {
@@ -38,14 +38,13 @@ header {
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
-  padding: 1% 0 1% 0;
+  padding: 0;
 }
 
 .logo {
   display: block;
-  float: center;
-  height: 10rem;
-  margin: 0 0 0 42%;
+  width: 20%;
+  margin: 0 40% 0 40%;
 }
 
 nav {
@@ -57,7 +56,7 @@ nav {
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
-  padding: 0.5% 0 1% 0
+  padding: 0.5% 0 1% 0;
 }
 
 nav a {
@@ -69,8 +68,7 @@ nav a {
   border-top-color: transparent;
   display: inline;
   text-align: center;
-  width: 8em;
-  margin-inline: 5em;
+  margin-inline: 3.6em;
   font-size: 130%;
   padding: 0.1em;
 }
@@ -83,10 +81,65 @@ nav a:link, nav a:visited {
 
 nav a:hover, nav a:active, .current {
   color: var(--nav-hover-txt-color);
-  background-color: var(--nav-hover-bg-color);
-  border-bottom-color: var(--nav-hover-txt-color);
+  background-color: transparent;
+  border-bottom-color: var(--border-color);
 }
 
-h2 {
-  margin-bottom: 80%;
+.container {
+  box-sizing: border-box;
+  border: 0.3em solid var(--border-color);
+  border-top: 0;
+  border-bottom: 0;
+  margin: -10% 0 -3.2% 0;
+}
+
+.image {
+  width: 25%;
+}
+
+#first-section {
+  margin: 0 2em;
+  font-size: 120%;
+}
+
+#summary {
+  float: left;
+  text-align: center;
+  margin-left: 0.9em;
+  padding: 0 1em 0 0;
+  font-size: 140%;
+}
+
+#quote {
+  float: left;
+  text-align: center;
+  margin-left: -0.7em;
+  font-size: 110%;
+}
+
+.image-right {
+  float: right;
+  margin: 0;
+}
+
+#second-section {
+  margin: 0 1em;
+  text-align: center;
+}
+
+.img-left {
+  float: left;
+  margin: 0;
+}
+
+footer {
+  height: 2rem;
+  text-align: center;
+  padding: 1% 0 0 0;
+  margin: 0;
+  position: static;
+  background-color: var(--nav-bg-color);
+  color: var(--txt-color);
+  font-size: 120%;
+  font-weight: 600;
 }
