@@ -6,7 +6,6 @@ function modeSwitch() {
 
     var checkBox = document.getElementById("modeSwitcher");
 
-
     if (checkBox.checked == true){
         light.disabled = true;
         dark.disabled = false;
