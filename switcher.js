@@ -8,7 +8,6 @@ function modeSwitch() {
     var logo = document.getElementById("logo");
     var checkBox = document.getElementById("modeSwitcher");
 
-
     if (checkBox.checked == true){
         light.disabled = true;
         dark.disabled = false;
