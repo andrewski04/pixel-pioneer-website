@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contact-light-mode.css">
+    <link rel="stylesheet" id="light" href="css/contact-light-mode.css">
+    <link rel="stylesheet" id="dark" href="css/dark-mode.css">
 
     <title>Contact</title>
 
@@ -17,6 +18,11 @@
 </head>
 <body>
     <header>
+        <script src="switcher.js"></script> 
+        <label class="switch">
+            <input type="checkbox" id="modeSwitcher" onclick="modeSwitch()">
+            <span class="slider round"></span>
+          </label>
         <img class="logo" src="images/IAmSolutionsLogo.png" alt="IAmSolutions Logo">
     </header>
     <nav>
@@ -29,22 +35,28 @@
 
     <div class="container">
         <p class="title">Contact Info</p>
-
-    </div>
-
-    <div>
-        <p>
+        <Section class="section-one">
             Company Contacts: 
-            Phone Number 423-708-5399
+            <br>
+            Phone Number <a href="tel:+14237085399">423-708-5399</a>
+            <br>
             Email <a href="mailto:Theiamminitriestn@gmail.com">Theiamminitriestn@gmail.com</a>
+            <br>
             Instagram Theiamministries
+            <br>
             Artez McLaughlin:
-    
+            <br>
             Alisha McLaughlin:
-        </p>
+        </Section>
     </div>
+
+   
     <br>
-    <footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer >
         IAmSolutions
     </footer>
 </body>

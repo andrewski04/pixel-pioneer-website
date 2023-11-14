@@ -93,6 +93,7 @@ nav a:hover, nav a:active, .current {
   border-top: 0;
   border-bottom: 0;
   margin: -10% 0 -3.2% 0;
+  width: 100%;
 }
 
 .image {
@@ -101,7 +102,7 @@ nav a:hover, nav a:active, .current {
 
 #first-section {
   margin: 0 2em;
-  font-size: 120%;
+  font-size: 168%;
 }
 
 #summary {
@@ -109,14 +110,13 @@ nav a:hover, nav a:active, .current {
   text-align: center;
   margin-left: 0.9em;
   padding: 0 1em 0 0;
-  font-size: 140%;
 }
 
 #quote {
   float: left;
   text-align: center;
   margin-left: -0.7em;
-  font-size: 110%;
+  font-size: 77%;
 }
 
 .image-right {
