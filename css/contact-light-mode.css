@@ -157,6 +157,17 @@ nav a:hover, nav a:active, .current {
   border-bottom: 0;
   margin: -10% 0 -3.2% 0;
 }
+
+#image-container {
+  width: 100%;
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+#image-container img {
+  width: 100%;
+  height: auto;
+}
   
 footer {
   height: 2rem;

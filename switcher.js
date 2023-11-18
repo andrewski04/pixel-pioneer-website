@@ -12,7 +12,9 @@ function modeSwitch() {
         light.disabled = true;
         dark.disabled = false;
         logo.src = "images/IAmSolutionsLogoWhite.png";
-    } else {
+        src =
+    } 
+    else {
         light.disabled = false;
         dark.disabled = true;
         logo.src = "images/IAmSolutionsLogo.png";
