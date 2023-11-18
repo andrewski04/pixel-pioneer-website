@@ -12,12 +12,13 @@ function modeSwitch() {
         light.disabled = true;
         dark.disabled = false;
         logo.src = "images/IAmSolutionsLogoWhite.png";
-        src =
+        ImageCyler.src = "lightImageCycler.js"
     } 
-    else {
+    else{
         light.disabled = false;
         dark.disabled = true;
         logo.src = "images/IAmSolutionsLogo.png";
+        ImageCyler.src = "darkImageCycler.js"
     }
 
   } 
