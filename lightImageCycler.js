@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   var imageContainer = document.getElementById('image-container');
-  var images = ['lightreview1.png', 'lightview2.png',]; // Add more image URLs as needed
+  var images = ['images/lightreview1.jpg', 'images/lightreview2.jpg',]; // Add more image URLs as needed
   var currentIndex = 0;
 
   function changeImage() {
       // Change the image source
-      imageContainer.innerHTML = '<img src="' + lightreview[currentIndex] + '" alt="darkreview ' + (currentIndex + 1) + '">';
-      imageContainer.innerHTML = '<img src="' + lightreview[currentIndex] + '" alt="darkreview ' + (currentIndex + 1) + '">';
-      
+      imageContainer.innerHTML = '<img src="' + images[currentIndex] + '" alt="lightreview ' + (currentIndex + 1) + '">';
+      imageContainer.innerHTML = '<img src="' + images[currentIndex] + '" alt="lightreview ' + (currentIndex + 1) + '">';
 
       // Increment the index
       currentIndex = (currentIndex + 1) % images.length;
