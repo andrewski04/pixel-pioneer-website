@@ -17,9 +17,9 @@
 
 .title {
   color: var(--txt-color);
-  margin-top: 10%;
+  margin-top: 2%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 300%;
+  font-size: 350%;
   text-align: center;
 }
 
@@ -93,12 +93,17 @@ nav a:hover, nav a:active, .current {
   border: 0.3em solid var(--border-color);
   border-top: 0;
   border-bottom: 0;
-  margin: -10% 0 -3.2% 0;
+  margin: 0 0 -3.2% 0;
   width: 100%;
+  padding-top: 1%;
 }
 
 .image {
   width: 25%;
+}
+
+section {
+  text-align: center;
 }
 
 #first-section {
@@ -110,6 +115,7 @@ nav a:hover, nav a:active, .current {
   float: left;
   text-align: center;
   margin-left: 0.9em;
+  margin-top: 2.5em;
   padding: 0 1em 0 0;
 }
 
@@ -126,8 +132,10 @@ nav a:hover, nav a:active, .current {
 }
 
 #second-section {
-  margin: 0 1em;
-  text-align: center;
+  margin: 1.2em 5em 0 5em;
+  font-size: 132%;
+  line-height: 1.2em;
+  padding: 1em 0;
 }
 
 .img-left {
@@ -170,7 +178,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--border-color);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -182,23 +190,24 @@ footer {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--txt-color);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--nav-hover-txt-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px var(--nav-hover-txt-color);
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  background-color: var(--bg-color);
 }
 
 /* Rounded sliders */
