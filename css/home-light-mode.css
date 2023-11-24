@@ -13,6 +13,7 @@
   --nav-bg-color: lightgray;
   --nav-hover-txt-color: #FA0086;
   --border-color: #CEAB59;
+  --button-bg-color: #e8e8e8;
 }
 
 .title {
@@ -23,10 +24,27 @@
   text-align: center;
 }
 
-.subtitle {
+#subtitle {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 210%;
   text-align: center;
+  padding-top: 1em;
+  color: var(--txt-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: var(--txt-color);
+  background-color: transparent;
+}
+
+a:hover, a:active, .current {
+  color: var(--txt-color);
+  text-decoration: none;
 }
 
 body {
@@ -93,9 +111,10 @@ nav a:hover, nav a:active, .current {
   border: 0.3em solid var(--border-color);
   border-top: 0;
   border-bottom: 0;
-  margin: 0 0 -3.2% 0;
+  margin: 0;
   width: 100%;
   padding-top: 1%;
+  padding-bottom: 3%;
 }
 
 .image {
@@ -135,12 +154,86 @@ section {
   margin: 1.2em 5em 0 5em;
   font-size: 132%;
   line-height: 1.2em;
-  padding: 1em 0;
+  padding: 1em 0 0 0;
 }
 
-.img-left {
+#youth {
+  font-size: 117%;
+  margin: 2em 5em 0 22em;
+  line-height: 1.7em;
+}
+
+#family {
+  font-size: 117%;
+  margin: 1em 5em 0 22em;
+  line-height: 1.7em;
+}
+
+#img-youth-family {
   float: left;
+  margin: -1em 0 0 0;
+  padding-left: 5%;
+}
+
+#foundation {
+  font-size: 140%;
+  margin: 4em 0 0 0;
+}
+
+#foundation-title {
+  font-size: 120%;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#foundation-text {
+  margin: 0.6em 0;
+}
+
+#ministries {
+  font-size: 128%;
+  margin: 3.1em 25em 0 3em;
+  line-height: 1.8em;
+}
+
+#img-ministries {
+  float: right;
+  margin: -1em 0 0 0;
+  padding: 0 5% 0 0;
+  width: 30%;
+}
+
+#contact-shop {
+  margin: 5em 0 0 0;
+  font-size: 150%;
+}
+
+#contact {
+  margin: 1em 0;
+}
+
+#shop {
+  margin: 1em 0;
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: var(--txt-color);
+  border: 0.1em solid var(--border-color);
+  font-size: 100%;
+  width: 20%;
+}
+
+button:link, button:visited {
+  text-decoration: none;
+  color: var(--nav-hover-txt-color);
+  background-color: var(--nav-bg-color);
+}
+
+button:hover, button:active, .current {
+  color: var(--nav-hover-txt-color);
+  background-color: var(--button-bg-color);
+  border-color: var(--border-color);
 }
 
 footer {
@@ -196,11 +289,11 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: var(--nav-hover-txt-color);
+  background-color: var(--border-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--nav-hover-txt-color);
+  box-shadow: 0 0 1px var(--border-color);
 }
 
 input:checked + .slider:before {
@@ -217,4 +310,5 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-} 
+}
+
