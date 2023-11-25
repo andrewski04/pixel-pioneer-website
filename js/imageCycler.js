@@ -19,5 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Set interval to change image in ms
-  setInterval(toggleImage, 2000);
+  setInterval(toggleImage, 5000);
 });

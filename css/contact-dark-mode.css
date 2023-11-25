@@ -1,18 +1,17 @@
 /*
-	Author:				    Pixel Pioneers (Andrew, Elvin, Riley, Landon, Roy Robinson Jr III) 
-	Creation Date:		11-11-2023
-	Last revised:		  11-11-2023
-	Assignment:			  Website Project
-
-  Primary Page Author: Riley Hayden
+		Author:				Pixel Pioneers (Andrew, Elvin, Riley, Landon, Roy Robinson Jr III) 
+		Creation Date:		10-31-2023
+		Last revised:		10-31-2023
+		Assignment:			Website Project
 */
 
 :root {
-  --bg-color: white;
-  --txt-color: black;
-  --nav-bg-color: lightgray;
-  --nav-hover-txt-color: #FA0086;
-  --border-color: #CEAB59;
+  --bg-color: #474747;
+  --txt-color: white;
+  --nav-bg-color: #292929;
+  --nav-hover-bg-color: #A30057;
+  --nav-hover-txt-color: #CEAB59;
+  --border-color: #A30057;
 }
 
 /* The switch - the box around the slider */
@@ -38,7 +37,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--border-color);
+  background-color: #eee;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -50,17 +49,17 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: black;
+  background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--border-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px var(--border-color);
 }
 
 input:checked + .slider:before {
@@ -76,8 +75,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-} 
-    
+}
+
 .title {
   color: var(--txt-color);
   margin-top: 10%;
@@ -85,22 +84,22 @@ input:checked + .slider:before {
   font-size: 300%;
   text-align: center;
 }
-    
+
 .subtitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   text-align: center;
 }
-    
+
 body {
-  width: 80%;
   background-color: var(--bg-color);
+  float: center;
   margin: 0 10% 0 10%;
   border: 0.3em solid var(--border-color);
   border-top: 0;
   border-bottom: 0;
 }
-    
+
 header {
   float: center;
   background-color: var(--nav-bg-color);
@@ -108,13 +107,13 @@ header {
   margin: 0;
   padding: 0;
 }
-    
+
 .logo {
   display: block;
   width: 20%;
   margin: 0 40% 0 40%;
 }
-    
+
 nav {
   color: var(--txt-color);
   position: sticky;
@@ -124,9 +123,9 @@ nav {
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
-  padding: 0.5% 0 1% 0;
+  padding: 0.5% 0 1% 0
 }
-  
+
 nav a {
   border-bottom-left-radius: .3em;
   border-bottom-right-radius: .3em;
@@ -136,24 +135,26 @@ nav a {
   border-top-color: transparent;
   display: inline;
   text-align: center;
+  width: 8em;
   margin-inline: 3.6em;
   font-size: 130%;
   padding: 0.1em;
 }
-    
+
 nav a:link, nav a:visited {
   text-decoration: none;
   color: var(--txt-color);
   background-color: transparent;
 }
-    
+
 nav a:hover, nav a:active, .current {
   color: var(--nav-hover-txt-color);
-  background-color: transparent;
-  border-bottom-color: var(--border-color);
+  background-color: var(--nav-hover-bg-color);
+  border-bottom-color: var(--nav-hover-txt-color);
 }
-    
+
 .container {
+  color: var(--txt-color);
   box-sizing: border-box;
   margin: -10% 0 -3.2% 0;
 }
@@ -200,4 +201,3 @@ footer {
   font-size: 120%;
   font-weight: 600;
 }
-
