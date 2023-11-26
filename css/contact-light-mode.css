@@ -160,13 +160,17 @@ nav a:hover, nav a:active, .current {
 
 #image-container {
   width: 100%;
-  max-width: 600px; /* Adjust the max-width as needed */
+  max-width: 600px;
   margin: 0 auto;
+  border: 0.3em dashed var(--border-color);
+  border-radius: 1em;
+  padding: 0.2em;
 }
 
 #image-container img {
   width: 100%;
   height: auto;
+  
 }
 
 section {
@@ -187,6 +191,10 @@ section {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   text-align: center;
+}
+
+a{ 
+  color: var(--border-color);
 }
 
 footer {
