@@ -53,6 +53,7 @@
     margin: 0 10% 0 10%;
     font-size: 1.05vw;
     color: var(--txt-color);
+    font-family: 'Open Sans', sans-serif;
   }
   
   header {
@@ -79,6 +80,7 @@
     width: 100%;
     margin: 0;
     padding: 0.5% 0 1% 0;
+    text-align: center;
   }
   
   nav a {
@@ -90,9 +92,10 @@
     border-top-color: transparent;
     display: inline;
     text-align: center;
-    margin-inline: 3.6em;
+    margin-inline: 3.5em;
     font-size: 130%;
     padding: 0.1em;
+    font-weight: 600;
   }
   
   nav a:link, nav a:visited {
@@ -127,22 +130,22 @@
   }
   
   #first-section {
-    margin: 0 2em;
+    margin: 0 0.4em;
     font-size: 168%;
   }
   
   #summary {
     float: left;
     text-align: center;
-    margin-left: 0.9em;
-    margin-top: 2.5em;
-    padding: 0 1em 0 0;
+    margin: 2.5em 0 0 1.7em;
+    padding: 0;
   }
   
   #quote {
     float: left;
     text-align: center;
-    margin-left: -0.7em;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 77%;
   }
   
@@ -313,7 +316,7 @@ input:focus + .slider {
     border-radius: 50%;
   }
   
-  @media (max-width: 1700px) {
+  @media (max-width: 1100px) {
     .title {
       font-size: 360%;
       margin-bottom: 3%;
@@ -341,7 +344,7 @@ input:focus + .slider {
     }
     
     nav a {
-      margin-inline: 2.1em;
+      margin-inline: 1.9em;
       font-size: 140%;
     }
    
@@ -473,6 +476,187 @@ input:focus + .slider {
   /* Rounded sliders */
   .slider.round {
     border-radius: 2vw;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
+  }
+  
+  @media (max-width: 700px) {
+    .title {
+      font-size: 400%;
+      margin-bottom: 5%;
+    }
+  
+    #subtitle {
+      font-size: 350%;
+      margin-top: -3%;
+    }
+    
+    body {
+      width: 100%;
+      margin: 0;
+      font-size: 2.2vw;
+    }
+  
+    .logo {
+      width: 40%;
+      margin: 0 30% 0 30%;
+    }
+  
+    header {
+      padding-bottom: 5%;
+    }
+    
+    nav {
+      padding: 2.5% 0 2.8% 0;
+      margin: -0.1% 0;
+    }
+    
+    nav a {
+      margin-inline: 0.2em;
+      font-size: 180%;
+    }
+   
+  .container {
+    border: 0.7em solid var(--border-color);
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .image {
+    width: 80%;
+  }
+  
+  #first-section {
+    margin: 0 1em 0 1em;
+    font-size: 240%;
+    line-height: 1.4em;
+  }
+  
+  #summary {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #quote {
+    margin: 0.5em -0.5em 1em -0.5em;
+    font-size: 90%;
+  }
+  
+  #second-section {
+    margin: 0 0.5em;
+    font-size: 210%;
+    line-height: 1.4em;
+    padding: 0;
+  }
+  
+  #second-section-2 {
+    margin-top: -0.8em;
+  }
+  
+  #youth {
+    font-size: 220%;
+    margin: 0 1em;
+    line-height: 1.45em;
+  }
+  
+  #family {
+    font-size: 220%;
+    margin: 0.5em 1em;
+    line-height: 1.45em;
+  }
+  
+  #img-youth-family {
+    margin: -4% 10% 3% 10%;
+    padding: 0;
+  }
+  
+  #foundation {
+    font-size: 235%;
+    margin: 0 0.5em;
+  }
+  
+  #foundation-title {
+    font-size: 120%;
+    margin: 0.6em 0 0.1em 0;
+  }
+  
+  #foundation-text {
+    margin: 0 0 1em 0;
+    line-height: 1.1em;
+  }
+  
+  #ministries {
+    font-size: 220%;
+    margin: 0.3em 0.5em;
+    line-height: 1.45em;
+  }
+  
+  #img-ministries {
+    margin: -2em 0 0 2.2em;
+    width: 90%;
+    float: none;
+  }
+  
+  #contact-shop {
+    margin: 1em 1.4em;
+    font-size: 270%;
+  }
+  
+  #contact {
+    margin: 0;
+  }
+  
+  #shop {
+    margin: 0.5em -0.3em 0 -0.3em;
+  }
+  
+  button {
+    border: 0.12em solid var(--border-color);
+    font-size: 110%;
+    width: 30%;
+  }
+  
+  #contact-button {
+    width: 50%;
+  }
+  
+  footer {
+    height: 1.6em;
+    padding: 0.4em 0 0 0;
+    margin: 0;
+    font-size: 260%;
+    font-weight: 600;
+  }
+  
+   /* The switch - the box around the slider */
+   .switch {
+    width: 14vw;
+    height: 7vw;
+  }
+  
+  .slider:before {
+    height: 5.4vw;
+    width: 5.4vw;
+    left: 6%;
+    bottom: 11%;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 0.000658vw var(--border-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(6.9vw);
+    -ms-transform: translateX(6.9vw);
+    transform: translateX(6.9vw);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 4vw;
   }
   
   .slider.round:before {
