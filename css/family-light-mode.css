@@ -105,4 +105,16 @@ footer {
   color: var(--txt-color);
   font-size: 120%;
   font-weight: 600;
+  margin-top: 25px;
+}
+
+p {
+  font-size: 30px;
+  color: #A30057;
+}
+
+ul {
+  margin-left: 50px;
+  font-size: 40px;
+  color: #A30057;
 }
