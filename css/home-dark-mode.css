@@ -1,0 +1,665 @@
+/*
+	Author:				    Pixel Pioneers (Andrew, Elvin, Riley, Landon, Roy Robinson Jr III) 
+	Creation Date:		10-31-2023
+	Last revised:		  11-10-2023
+	Assignment:			  Website Project
+
+  Primary Page Author: Landon Stott
+*/
+
+:root {
+    --bg-color: #474747;
+    --txt-color: white;
+    --nav-bg-color: #292929;
+    --nav-hover-txt-color: #CEAB59;
+    --border-color: #FA0086;
+    --button-bg-color: #e8e8e8;
+  }
+  
+  .title {
+    color: var(--txt-color);
+    margin-top: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 350%;
+    text-align: center;
+  }
+  
+  #subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 210%;
+    text-align: center;
+    padding-top: 1em;
+    color: var(--txt-color);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:link, a:visited {
+    text-decoration: none;
+    color: var(--txt-color);
+    background-color: transparent;
+  }
+  
+  a:hover, a:active, .current {
+    color: var(--txt-color);
+    text-decoration: none;
+  }
+  
+  body {
+    width: 80%;
+    background-color: var(--bg-color);
+    margin: 0 10% 0 10%;
+    font-size: 1.05vw;
+    color: var(--txt-color);
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  header {
+    float: center;
+    background-color: var(--nav-bg-color);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    display: block;
+    width: 20%;
+    margin: 0 40% 0 40%;
+  }
+  
+  nav {
+    color: var(--txt-color);
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    float: center;
+    background-color: var(--nav-bg-color);
+    width: 100%;
+    margin: 0;
+    padding: 0.5% 0 1% 0;
+    text-align: center;
+  }
+  
+  nav a {
+    border-bottom-left-radius: .3em;
+    border-bottom-right-radius: .3em;
+    border-bottom: 0.25em solid var(--txt-color);
+    border-top-left-radius: .3em;
+    border-top-right-radius: .3em;
+    border-top-color: transparent;
+    display: inline;
+    text-align: center;
+    margin-inline: 3.4em;
+    font-size: 130%;
+    padding: 0.1em;
+    font-weight: 600;
+  }
+  
+  nav a:link, nav a:visited {
+    text-decoration: none;
+    color: var(--txt-color);
+    background-color: transparent;
+  }
+  
+  nav a:hover, nav a:active, .current {
+    color: var(--nav-hover-txt-color);
+    background-color: transparent;
+    border-bottom-color: var(--border-color);
+  }
+  
+  .container {
+    box-sizing: border-box;
+    border: 0.3em solid var(--border-color);
+    border-top: 0;
+    border-bottom: 0;
+    margin: 0;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+  }
+  
+  .image {
+    width: 25%;
+  }
+  
+  section {
+    text-align: center;
+  }
+  
+  #first-section {
+    margin: 0 0.4em;
+    font-size: 168%;
+  }
+  
+  #summary {
+    float: left;
+    text-align: center;
+    margin: 2.5em 0 0 1.7em;
+    padding: 0;
+  }
+  
+  #quote {
+    float: left;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 77%;
+  }
+  
+  .image-right {
+    float: right;
+    margin: 0;
+  }
+  
+  #second-section {
+    margin: 1.2em 5em 0 5em;
+    font-size: 132%;
+    line-height: 1.2em;
+    padding: 1em 0 0 0;
+  }
+  
+  #youth {
+    font-size: 117%;
+    margin: 2em 5em 0 22em;
+    line-height: 1.7em;
+  }
+  
+  #family {
+    font-size: 117%;
+    margin: 1em 5em 0 22em;
+    line-height: 1.7em;
+  }
+  
+  #img-youth-family {
+    float: left;
+    margin: -1em 0 0 0;
+    padding-left: 5%;
+  }
+  
+  #foundation {
+    font-size: 140%;
+    margin: 4em 0 0 0;
+  }
+  
+  #foundation-title {
+    font-size: 120%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #foundation-text {
+    margin: 0.6em 0;
+  }
+  
+  #ministries {
+    font-size: 128%;
+    margin: 3.1em 25em 0 3em;
+    line-height: 1.8em;
+  }
+  
+  #img-ministries {
+    float: right;
+    margin: -1em 0 0 0;
+    padding: 0 5% 0 0;
+    width: 30%;
+  }
+  
+  #contact-shop {
+    margin: 5em 0 0 0;
+    font-size: 150%;
+  }
+  
+  #contact {
+    margin: 1em 0;
+  }
+  
+  #shop {
+    margin: 1em 0;
+  }
+  
+  button {
+    background-color: #333333;
+    color: var(--txt-color);
+    border: 0.1em solid var(--border-color);
+    font-size: 100%;
+    width: 20%;
+  }
+  
+  button:link, button:visited {
+    text-decoration: none;
+    color: var(--nav-hover-txt-color);
+    background-color: #333333;
+  }
+  
+  button:hover, button:active, .current {
+    color: var(--nav-hover-txt-color);
+    background-color: #333333;
+    border-color: var(--border-color);
+  }
+  
+  footer {
+    height: 2rem;
+    text-align: center;
+    padding: 1% 0 0 0;
+    margin: 0;
+    position: static;
+    background-color: var(--nav-bg-color);
+    color: var(--txt-color);
+    font-size: 120%;
+    font-weight: 600;
+  }
+  
+ /* The switch - the box around the slider */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 4vw;
+    height: 2.1vw;
+ }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--border-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.65vw;
+  width: 1.65vw;
+  left: 6%;
+  bottom: 12%;
+  background-color: var(--txt-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--border-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 0.000658vw var(--border-color);
+}
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(1.85vw);
+    -ms-transform: translateX(1.85vw);
+    transform: translateX(1.85vw);
+    background-color: white;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 1.8vw;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 1100px) {
+    .title {
+      font-size: 360%;
+      margin-bottom: 3%;
+    }
+  
+    #subtitle {
+      font-size: 280%;
+      margin-top: -3%;
+    }
+    
+    body {
+      width: 90%;
+      margin: 0 5% 0 5%;
+      font-size: 1.5vw;
+    }
+  
+    .logo {
+      width: 30%;
+      margin: 0 35% 0 35%;
+    }
+    
+    nav {
+      padding: 1% 0 1.5% 0;
+      margin: -0.005% 0;
+    }
+    
+    nav a {
+      margin-inline: 1.9em;
+      font-size: 140%;
+    }
+   
+  .container {
+    border: 0.4em solid var(--border-color);
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .image {
+    width: 50%;
+  }
+  
+  #first-section {
+    margin: 0 3em;
+    font-size: 185%;
+  }
+  
+  #summary {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #quote {
+    margin: 1em 0 0.5em 0;
+    font-size: 90%;
+  }
+  
+  #second-section {
+    margin: 0 3.7em 0 3.7em;
+    font-size: 145%;
+    line-height: 1.2em;
+    padding: 1em 0 0 0;
+  }
+  
+  #youth {
+    font-size: 150%;
+    margin: 16.5em 3em 0 3em;
+    line-height: 1.5em;
+  }
+  
+  #family {
+    font-size: 150%;
+    margin: 1em 3em 0 3em;
+    line-height: 1.5em;
+  }
+  
+  #img-youth-family {
+    margin: -3% 0 0 0;
+    padding: 0 25%;
+  }
+  
+  #foundation {
+    font-size: 160%;
+    margin: 3em 2em 0 2em;
+  }
+  
+  #foundation-title {
+    font-size: 130%;
+    margin: -0.5em 0 0 0;
+  }
+  
+  #foundation-text {
+    margin: 0.6em 0 1.5em 0;
+  }
+  
+  #ministries {
+    font-size: 160%;
+    margin: 1em 3.4em 0 3.4em;
+    line-height: 1.4em;
+  }
+  
+  #img-ministries {
+    margin: -2em 12em 0 12em;
+    width: 60%;
+    float: none;
+  }
+  
+  #contact-shop {
+    margin: 3em 0 0 0;
+    font-size: 190%;
+  }
+  
+  #contact {
+    margin: 1em 0;
+  }
+  
+  #shop {
+    margin: 1em 0;
+  }
+  
+  button {
+    border: 0.1em solid var(--border-color);
+    font-size: 100%;
+    width: 20%;
+  }
+  
+  footer {
+    height: 1.5em;
+    padding: 1% 0 0 0;
+    margin: 0;
+    font-size: 170%;
+    font-weight: 600;
+  }
+  
+   /* The switch - the box around the slider */
+   .switch {
+    width: 5.8vw;
+    height: 2.7vw;
+  }
+  
+  .slider:before {
+    height: 2vw;
+    width: 2.1vw;
+    left: 6%;
+    bottom: 12%;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 0.000658vw var(--border-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(3vw);
+    -ms-transform: translateX(3vw);
+    transform: translateX(3vw);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 2vw;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
+  }
+  
+  @media (max-width: 700px) {
+    .title {
+      font-size: 400%;
+      margin-bottom: 5%;
+    }
+  
+    #subtitle {
+      font-size: 350%;
+      margin-top: -3%;
+    }
+    
+    body {
+      width: 100%;
+      margin: 0;
+      font-size: 2.2vw;
+    }
+  
+    .logo {
+      width: 40%;
+      margin: 0 30% 0 30%;
+    }
+  
+    header {
+      padding-bottom: 5%;
+    }
+    
+    nav {
+      padding: 2.5% 0 2.8% 0;
+      margin: -0.1% 0;
+    }
+    
+    nav a {
+      margin-inline: 0.2em;
+      font-size: 180%;
+    }
+   
+  .container {
+    border: 0.7em solid var(--border-color);
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .image {
+    width: 80%;
+  }
+  
+  #first-section {
+    margin: 0 1em 0 1em;
+    font-size: 240%;
+    line-height: 1.4em;
+  }
+  
+  #summary {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #quote {
+    margin: 0.5em -0.5em 1em -0.5em;
+    font-size: 90%;
+  }
+  
+  #second-section {
+    margin: 0 0.5em;
+    font-size: 210%;
+    line-height: 1.4em;
+    padding: 0;
+  }
+  
+  #second-section-2 {
+    margin-top: -0.8em;
+  }
+  
+  #youth {
+    font-size: 220%;
+    margin: 0 1em;
+    line-height: 1.45em;
+  }
+  
+  #family {
+    font-size: 220%;
+    margin: 0.5em 1em;
+    line-height: 1.45em;
+  }
+  
+  #img-youth-family {
+    margin: -4% 10% 3% 10%;
+    padding: 0;
+  }
+  
+  #foundation {
+    font-size: 235%;
+    margin: 0 0.5em;
+  }
+  
+  #foundation-title {
+    font-size: 120%;
+    margin: 0.6em 0 0.1em 0;
+  }
+  
+  #foundation-text {
+    margin: 0 0 1em 0;
+    line-height: 1.1em;
+  }
+  
+  #ministries {
+    font-size: 220%;
+    margin: 0.3em 0.5em;
+    line-height: 1.45em;
+  }
+  
+  #img-ministries {
+    margin: -2em 0 0 2.2em;
+    width: 90%;
+    float: none;
+  }
+  
+  #contact-shop {
+    margin: 1em 1.4em;
+    font-size: 270%;
+  }
+  
+  #contact {
+    margin: 0;
+  }
+  
+  #shop {
+    margin: 0.5em -0.3em 0 -0.3em;
+  }
+  
+  button {
+    border: 0.12em solid var(--border-color);
+    font-size: 110%;
+    width: 30%;
+  }
+  
+  #contact-button {
+    width: 50%;
+  }
+  
+  footer {
+    height: 1.6em;
+    padding: 0.4em 0 0 0;
+    margin: 0;
+    font-size: 260%;
+    font-weight: 600;
+  }
+  
+   /* The switch - the box around the slider */
+   .switch {
+    width: 14vw;
+    height: 7vw;
+  }
+  
+  .slider:before {
+    height: 5.4vw;
+    width: 5.4vw;
+    left: 6%;
+    bottom: 11%;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 0.000658vw var(--border-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(6.9vw);
+    -ms-transform: translateX(6.9vw);
+    transform: translateX(6.9vw);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 4vw;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
+  }

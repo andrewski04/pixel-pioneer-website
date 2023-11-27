@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" id="light" href="css/home-light-mode.css">
-    <link rel="stylesheet" id="dark" href="css/dark-mode.css">
+    <link rel="stylesheet" id="dark" href="css/home-dark-mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
 
     <title>Home</title>
 
@@ -18,7 +23,7 @@
 </head>
 <body>
     <header>
-        <script src="switcher.js"></script> 
+        <script src="js/switcher.js"></script> 
         <label class="switch">
             <input type="checkbox" id="modeSwitcher" onclick="modeSwitch()">
             <span class="slider round"></span>
@@ -36,6 +41,7 @@
 
     <div class="container">
         <h2 class="title">The IAm Solutions</h2>
+
         <section id="first-section">
             <p id="summary">
                 The IAM Solutions aim is to provide three holistic programming<br>solutions for empowering the future by transforming lives.
@@ -45,26 +51,69 @@
             </blockquote>
             <img class="image image.right" src="images/FoundingCouple.jpg" alt="Founding + Couple">
         </section>
+
         <section id="second-section">
-            <p id="mission">
-                The mission of the IAM Solutions is to provide three holistic programming solutions to equip, empower the youth, marriage, and families of disadvantaged communities.
+            <p>
+                The IAM Solutions is a Local Chattanooga TN, Charitable Organization filing for nonprofit 501c3 status.
             </p>
-            <p id="vision">
-                Our vision is to see that all youth, marriages and families be holistically self-sufficient and thriving spiritually, physically, economically.
+            <p>
+                We strive to be Chattanooga’s leading organization passionate about providing three programming solutions to equip, empower the youth, marriages, and families. 
             </p>
+            <br>
+            <section id="second-section-2">
+                <p>
+                    The mission of the IAM Solutions is to provide three holistic programming solutions to equip, empower the youth, marriage, and families of disadvantaged communities.
+                </p>
+                <p>
+                    Our vision is to see that all youth, marriages and families be holistically self-sufficient and thriving spiritually, physically, economically.
+                </p>
+            </section>
         </section>
-<!--        <section>
-            <p id="program-summaries">
+
+        <section>
+            <a href="family.html"><h3 id="subtitle">Youth & Family</h3></a>
+
+            <a href="family.html"><img class="image" id="img-youth-family" src="images/YouthFamily.jpg" alt="Youth + Event"></a>
+
+            <p id="youth">
                 The IAM Youth Program is a visionary program poised to revolutionize youth development across the foundational and unique age groups ranging from 7 to 24 years of age.
             </p>
-            <p id="program-summaries">
-                The IAM Marriage Program is also set to nurture with a passion and commitment to serve, support marriages to stabilize two parent households to reduce children out of wedlock and decrease the divorce rates.
-            </p>
-            <p id="program-summaries">
+            <p id="family">
                 The IAM Family Program is set to equip individuals from being dependent on government benefits to independence through work, career preparation to obtain affordable homeownership.
             </p>
         </section>
--->
+
+        <section id="foundation">
+            <h6 id="foundation-title">
+                Our Foundational Value:
+            </h6>
+            <p id="foundation-text">
+                Scholarship, Leadership, Intergrity, Humility, Duty, Generosity,
+                <br>
+                We believe everyone has gifts, talents that are intended to be used for purpose in life.
+        </section>
+
+        <section>
+            <a href="marriage.html"><h3 id="subtitle">Ministries</h3></a>
+
+            <a href="marriage.html"><img class="image" id="img-ministries" src="images/Ministries.png" alt="Founding + Couple"></a>
+
+            <p id="ministries">
+                The IAM Marriage Program is also set to nurture with a passion and commitment to serve, support marriages to stabilize two parent households to reduce children out of wedlock and decrease the divorce rates.
+            </p>
+        </section>
+
+        <section id="contact-shop">
+            <p id="contact">
+                Please contact us if you would like to make a donation.
+            </p>
+            <a href="contact.html"><button id="contact-button" type="button">Contact Us</button></a>
+
+            <p id="shop">
+                Additionally, we have merchandise available for purchase.
+            </p>
+            <a href="shop.html"><button type="button">Shop</button></a>
+        </section>
     </div>
 
     <footer>
