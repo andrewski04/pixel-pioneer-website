@@ -96,9 +96,7 @@ body {
   width: 80%;
   background-color: var(--bg-color);
   margin: 0 10% 0 10%;
-  border: 0.3em solid var(--border-color);
-  border-top: 0;
-  border-bottom: 0;
+
 }
     
 header {
@@ -156,17 +154,23 @@ nav a:hover, nav a:active, .current {
 .container {
   box-sizing: border-box;
   margin: -10% 0 -3.2% 0;
+  border: 0.3em solid var(--border-color);
+  border-top: 0;
+  border-bottom: 0;
 }
 
 #image-container {
   width: 100%;
-  max-width: 600px; /* Adjust the max-width as needed */
+  max-width: 600px;
   margin: 0 auto;
 }
 
 #image-container img {
   width: 100%;
   height: auto;
+  border: 0.3em dashed var(--border-color);
+  border-radius: 1em;
+  padding: 0;
 }
 
 section {
@@ -187,6 +191,16 @@ section {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   text-align: center;
+}
+
+a{ 
+  color: var(--border-color);
+}
+
+a:hover, a:active, .current {
+  color: var(--nav-hover-txt-color);
+  background-color: transparent;
+  border-bottom-color: var(--border-color);
 }
 
 footer {
