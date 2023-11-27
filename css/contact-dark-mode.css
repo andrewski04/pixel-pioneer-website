@@ -95,9 +95,6 @@ body {
   background-color: var(--bg-color);
   float: center;
   margin: 0 10% 0 10%;
-  border: 0.3em solid var(--border-color);
-  border-top: 0;
-  border-bottom: 0;
 }
 
 header {
@@ -157,20 +154,24 @@ nav a:hover, nav a:active, .current {
   color: var(--txt-color);
   box-sizing: border-box;
   margin: -10% 0 -3.2% 0;
+  border: 0.3em solid var(--border-color);
+  border-top: 0;
+  border-bottom: 0;
 }
 
 #image-container {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  border: 0.3em dashed var(--border-color);
-  border-radius: 1em;
-  padding: 0.2em;
+
 }
 
 #image-container img {
   width: 100%;
   height: auto;
+  border: 0.3em dashed var(--border-color);
+  border-radius: 1em;
+  padding: 0;
 }
 
 section {
