@@ -18,10 +18,12 @@
   
   .title {
 	color: var(--txt-color);
-	margin-top: 10%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 300%;
 	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 10%;
+
   }
   
   .subtitle {
@@ -147,12 +149,13 @@
 	font-weight: 600;
   }
   
-   /* The switch - the box around the slider */
-   .switch {
+
+ /* The switch - the box around the slider */
+ .switch {
 	position: relative;
 	display: inline-block;
-	width: 60px;
-	height: 34px;
+	width: 4vw;
+	height: 2.1vw;
   }
   
   /* Hide default HTML checkbox */
@@ -170,7 +173,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background-color: var(--border-color);
 	-webkit-transition: .4s;
 	transition: .4s;
   }
@@ -178,38 +181,38 @@
   .slider:before {
 	position: absolute;
 	content: "";
-	height: 26px;
-	width: 26px;
-	left: 4px;
-	bottom: 4px;
-	background-color: white;
+	height: 1.65vw;
+	width: 1.65vw;
+	left: 6%;
+	bottom: 12%;
+	background-color: var(--txt-color);
 	-webkit-transition: .4s;
 	transition: .4s;
   }
   
   input:checked + .slider {
-	background-color: #2196F3;
+	background-color: var(--border-color);
   }
   
   input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 0.000658vw var(--border-color);
   }
   
   input:checked + .slider:before {
-	-webkit-transform: translateX(26px);
-	-ms-transform: translateX(26px);
-	transform: translateX(26px);
+	-webkit-transform: translateX(1.85vw);
+	-ms-transform: translateX(1.85vw);
+	transform: translateX(1.85vw);
+	background-color: var(--bg-color);
   }
   
   /* Rounded sliders */
   .slider.round {
-	border-radius: 34px;
+	border-radius: 1.8vw;
   }
   
   .slider.round:before {
 	border-radius: 50%;
-  } 
-
+  }
 
 .product-container {
     background: #fff;
@@ -232,6 +235,7 @@
 }
 
 .product-info {
+	font-family: 'Open Sans', sans-serif;
     padding-left: 20px;
     padding-right: 20px;
     flex: 1;
@@ -239,17 +243,20 @@
 }
 
 .product-title {
+	font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     color: #333;
     margin-bottom: 0.5em;
 }
 
 .product-price {
+	font-family: 'Open Sans', sans-serif;
     color: #888;
     margin-bottom: 0.5em;
 }
 
 .product-description {
+	font-family: 'Open Sans', sans-serif;
     color: #666;
     margin-bottom: 1em;
 }
