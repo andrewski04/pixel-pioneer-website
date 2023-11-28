@@ -151,10 +151,11 @@ nav a:hover, nav a:active, .current {
     
 .container {
   box-sizing: border-box;
+  margin: -12% 0 -3.2% 0;
   border: 0.3em solid var(--border-color);
+  width: 100%;
   border-top: 0;
   border-bottom: 0;
-  margin: -10% 0 -3.2% 0;
 }
   
 footer {
@@ -167,16 +168,17 @@ footer {
   color: var(--txt-color);
   font-size: 120%;
   font-weight: 600;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 p {
   font-size: 30px;
   color: var(--txt-color);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 ul {
-  margin-left: 50px;
-  font-size: 40px;
+  font-size: 35px;
   color: var(--txt-color);
 }
