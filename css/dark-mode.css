@@ -11,6 +11,7 @@
   --nav-bg-color: #292929;
   --nav-hover-bg-color: #FA0086;
   --nav-hover-txt-color: #CEAB59;
+  --border-color: #FA0086;
 }
 
 .title {
@@ -133,11 +134,11 @@ h2 {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--border-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px var(--border-color);
 }
 
 input:checked + .slider:before {
