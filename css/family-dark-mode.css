@@ -1,20 +1,20 @@
 /*
-  Author:				    Pixel Pioneers (Andrew, Elvin, Riley, Landon, Roy Robinson Jr III) 
-  Creation Date:		11-11-2023
-  Last revised:	  	11-11-2023
+	Author:				    Pixel Pioneers (Andrew, Elvin, Riley, Landon, Roy Robinson Jr III) 
+	Creation Date:		11-11-2023
+	Last revised:		  11-11-2023
 	Assignment:			  Website Project
 
-  Primary Page Author: Elvin Domingo Puac
+  Primary Page Author: Roy Lee Robinson Jr. III
 */
 
 :root {
-  --bg-color: white;
-  --txt-color: black;
-  --nav-bg-color: lightgray;
-  --nav-hover-txt-color: #FA0086;
-  --border-color: #CEAB59;
+  --bg-color: #474747;
+  --txt-color: white;
+  --nav-bg-color: #292929;
+  --nav-hover-bg-color: #FA0086;
+  --nav-hover-txt-color: #CEAB59;
+  --border-color: #FA0086;
 }
-
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -50,13 +50,13 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: black;
+  background-color: #eee;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--nav-hover-bg-color)
 }
 
 input:focus + .slider {
@@ -76,7 +76,7 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-} 
+}
     
 .title {
   color: var(--txt-color);
@@ -96,7 +96,6 @@ body {
   width: 80%;
   background-color: var(--bg-color);
   margin: 0 10% 0 10%;
-
 }
     
 header {
@@ -153,56 +152,12 @@ nav a:hover, nav a:active, .current {
     
 .container {
   box-sizing: border-box;
-  margin: -10% 0 -3.2% 0;
   border: 0.3em solid var(--border-color);
   border-top: 0;
   border-bottom: 0;
+  margin: -12% 0 -3.2% 0;
 }
-
-#image-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-#image-container img {
-  width: 100%;
-  height: auto;
-  border: 0.3em dashed var(--border-color);
-  border-radius: 1em;
-  padding: 0;
-}
-
-section {
-  text-align: center;
-}
-
-.section-one{
-  margin: 0 2em;
-  font-size: 168%;
-}
-
-.section-two{
-  margin: 0 2em;
-  font-size: 130%;
-}
-
-.review{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  text-align: center;
-}
-
-a{ 
-  color: var(--border-color);
-}
-
-a:hover, a:active, .current {
-  color: var(--nav-hover-txt-color);
-  background-color: transparent;
-  border-bottom-color: var(--border-color);
-}
-
+  
 footer {
   height: 2rem;
   text-align: center;
@@ -213,4 +168,16 @@ footer {
   color: var(--txt-color);
   font-size: 120%;
   font-weight: 600;
+  margin-top: 25px;
+}
+
+p {
+  font-size: 30px;
+  color: var(--txt-color);
+}
+
+ul {
+  margin-left: 50px;
+  font-size: 40px;
+  color: var(--txt-color);
 }

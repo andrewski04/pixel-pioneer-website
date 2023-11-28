@@ -6,7 +6,6 @@
 
 	Primary Page Author: Andrew Houser
 */
-/* Styles.css */
 
 :root {
     --bg-color: #474747;
@@ -147,8 +146,8 @@
 	font-weight: 600;
   }
   
-   /* The switch - the box around the slider */
-   .switch {
+/* The switch - the box around the slider */
+.switch {
 	position: relative;
 	display: inline-block;
 	width: 60px;
@@ -170,7 +169,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background-color: #eee;
 	-webkit-transition: .4s;
 	transition: .4s;
   }
@@ -188,11 +187,11 @@
   }
   
   input:checked + .slider {
-	background-color: #2196F3;
+	background-color: var(--border-color);
   }
   
   input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 1px var(--border-color);
   }
   
   input:checked + .slider:before {
@@ -208,8 +207,7 @@
   
   .slider.round:before {
 	border-radius: 50%;
-  } 
-
+  }
 
 .product-container {
     background: #fff;
@@ -232,6 +230,7 @@
 }
 
 .product-info {
+	font-family: 'Open Sans', sans-serif;
     padding-left: 20px;
     padding-right: 20px;
     flex: 1;
@@ -239,17 +238,20 @@
 }
 
 .product-title {
+	font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     color: #333;
     margin-bottom: 0.5em;
 }
 
 .product-price {
+	font-family: 'Open Sans', sans-serif;
     color: #888;
     margin-bottom: 0.5em;
 }
 
 .product-description {
+	font-family: 'Open Sans', sans-serif;
     color: #666;
     margin-bottom: 1em;
 }
