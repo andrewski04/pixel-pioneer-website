@@ -8,11 +8,12 @@
 */
 
 :root {
-  --bg-color: white;
-  --txt-color: black;
-  --nav-bg-color: lightgray;
-  --nav-hover-txt-color: #FA0086;
-  --border-color: #CEAB59;
+  --bg-color: #474747;
+  --txt-color: white;
+  --nav-bg-color: #292929;
+  --nav-hover-bg-color: #FA0086;
+  --nav-hover-txt-color: #CEAB59;
+  --border-color: #FA0086;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -49,13 +50,13 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: black;
+  background-color: #eee;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--nav-hover-bg-color)
 }
 
 input:focus + .slider {
