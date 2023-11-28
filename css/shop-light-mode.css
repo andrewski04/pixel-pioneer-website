@@ -147,8 +147,8 @@
 	font-weight: 600;
   }
   
-   /* The switch - the box around the slider */
-   .switch {
+/* The switch - the box around the slider */
+.switch {
 	position: relative;
 	display: inline-block;
 	width: 60px;
@@ -170,7 +170,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background-color: var(--border-color);
 	-webkit-transition: .4s;
 	transition: .4s;
   }
@@ -182,7 +182,7 @@
 	width: 26px;
 	left: 4px;
 	bottom: 4px;
-	background-color: white;
+	background-color: black;
 	-webkit-transition: .4s;
 	transition: .4s;
   }
