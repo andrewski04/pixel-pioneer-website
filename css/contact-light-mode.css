@@ -192,10 +192,10 @@ section {
 
 .section-two{
   margin: 0 2em;
-  font-size: 130%;
+  font-size: 168%;
   text-align: center;
-  float: left;
 }
+
 
 .review{
   font-family: 'Montserrat', sans-serif;
@@ -314,10 +314,10 @@ nav a {
 }
 
 .section-two{
-  margin: 0 3.7em 0 3.7em;
-  font-size: 145%;
+  margin: 0 3em;
+  font-size: 185%;
   text-align: center;
-  float: left;
+
 }
 
 .review{
@@ -417,8 +417,8 @@ line-height: 1.4em;
 }
 
 .section-two{
-  margin: 0 0.5em;
-  font-size: 210%;
+  margin: 0 1em;
+  font-size: 240%;
   line-height: 1.4em;
 }
 
