@@ -9,13 +9,13 @@
 /* Styles.css */
 
 :root {
-	--bg-color: white;
-	--txt-color: black;
-	--nav-bg-color: lightgray;
-	--nav-hover-txt-color: #FA0086;
-	--border-color: #CEAB59;
+    --bg-color: #474747;
+    --txt-color: white;
+    --nav-bg-color: #292929;
+    --nav-hover-txt-color: #CEAB59;
+    --border-color: #FA0086;
+    --button-bg-color: #e8e8e8;
   }
-  
   .title {
 	color: var(--txt-color);
 	margin-top: 10%;

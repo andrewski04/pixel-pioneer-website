@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" id="light" href="css/contact-light-mode.css">
-    <link rel="stylesheet" id="dark" href="css/dark-mode.css">
+    <link rel="stylesheet" id="dark" href="css/contact-dark-mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <title>Contact</title>
 
     <!-- 
 		Author:				Riley Hayden
 		Creation Date:		10-31-2023
-		Last revised:		11-11-2023
+		Last revised:		11-14-2023
 		Assignment:			Website Project
 	-->
 
 </head>
 <body>
     <header>
-        <script src="switcher.js"></script> 
+        <script src="js/switcher.js"></script> 
+        <script src="js/imageCycler.js"></script>
+
         <label class="switch">
             <input type="checkbox" id="modeSwitcher" onclick="modeSwitch()">
             <span class="slider round"></span>
           </label>
-        <img class="logo" src="images/IAmSolutionsLogo.png" alt="IAmSolutions Logo">
+        <img class="logo" id="logo" src="images/IAmSolutionsLogo.png" alt="IAmSolutions Logo">
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -34,23 +39,33 @@
     </nav>
 
     <div class="container">
-        <p class="title">Contact Info</p>
-        <Section class="section-one">
-            Company Contacts: 
+        <p class="title">Contact Us</p>
+        <section class="section-one">
+            Do you have a question or are seeking help? Reach out to us! We are happy to help <br>
+            answer any questions or provide any assistance. We provide marriage counseling, youth mentoring, and family resources.
+        </section>
+        <br>
+        <Section class="section-two">
+            <h3 class="subtitle">Company Contacts:</h3>
+            Phone Number: <a href="tel:+14237085399">423-708-5399</a>
             <br>
-            Phone Number <a href="tel:+14237085399">423-708-5399</a>
+            Email: <a href="mailto:Theiamminitriestn@gmail.com">Theiamminitriestn@gmail.com</a>
             <br>
-            Email <a href="mailto:Theiamminitriestn@gmail.com">Theiamminitriestn@gmail.com</a>
-            <br>
-            Instagram Theiamministries
-            <br>
-            Artez McLaughlin:
-            <br>
-            Alisha McLaughlin:
+            Instagram Theiamministries 
+            
         </Section>
+        <br> <br><br><br><br>
+    <div id="image-container">
+        <img src="images/lightreview1.jpg" alt="Image 1">
     </div>
+    <section class="review">
+        <a href="https://www.google.com/search?q=Christian+Coaching+TheIAMSolutions&sca_esv=339159a9634a0c7a&sca_upv=1&sxsrf=AM9HkKkxTp4_dkOEYoOMYn9KWCcKMvdwLg%3A1700263450667&ei=GvZXZbCTKIirqtsPmf6hIA&ved=0ahUKEwiwiIH4lsyCAxWIlWoFHRl_CAQQ4dUDCBA&uact=5&oq=Christian+Coaching+TheIAMSolutions&gs_lp=Egxnd3Mtd2l6LXNlcnAiIkNocmlzdGlhbiBDb2FjaGluZyBUaGVJQU1Tb2x1dGlvbnMyBxAhGKABGAoyBxAhGKABGAoyBxAhGKABGAoyBxAhGKABGApI9ndQ-nNY-nNwAXgBkAEAmAFuoAFuqgEDMC4xuAEDyAEA-AEC-AEBwgIKEAAYRxjWBBiwA-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp#ip=1&lrd=0x886067b82b1245eb:0x8d9a91ab3188287d,3,,,,">Leave A Review</a>
+    </section>
+        
+    </div>
+    
 
-   
+    
     <br>
     <br>
     <br>
