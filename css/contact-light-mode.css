@@ -100,6 +100,7 @@ body {
   margin: 0 10% 0 10%;
   font-size: 1.03vw;
   font-family: 'Open Sans', sans-serif;
+  color: var(--txt-color);
 }
 
 header {
@@ -435,4 +436,3 @@ footer {
   font-weight: 600;
 }
 }
-
