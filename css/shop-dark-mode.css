@@ -6,7 +6,6 @@
 
 	Primary Page Author: Andrew Houser
 */
-/* Styles.css */
 
 :root {
     --bg-color: #474747;
@@ -231,6 +230,7 @@
 }
 
 .product-info {
+	font-family: 'Open Sans', sans-serif;
     padding-left: 20px;
     padding-right: 20px;
     flex: 1;
@@ -238,17 +238,20 @@
 }
 
 .product-title {
+	font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     color: #333;
     margin-bottom: 0.5em;
 }
 
 .product-price {
+	font-family: 'Open Sans', sans-serif;
     color: #888;
     margin-bottom: 0.5em;
 }
 
 .product-description {
+	font-family: 'Open Sans', sans-serif;
     color: #666;
     margin-bottom: 1em;
 }
