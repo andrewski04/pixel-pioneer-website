@@ -96,8 +96,10 @@ body {
   width: 80%;
   background-color: var(--bg-color);
   margin: 0 10% 0 10%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
 }
-    
+
 header {
   float: center;
   background-color: var(--nav-bg-color);
@@ -133,7 +135,7 @@ nav a {
   border-top-color: transparent;
   display: inline;
   text-align: center;
-  margin-inline: 3.6em;
+  margin-inline: 3.5em;
   font-size: 130%;
   padding: 0.1em;
 }
@@ -174,10 +176,20 @@ footer {
 p {
   font-size: 30px;
   color: var(--txt-color);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 ul {
-  margin-left: 50px;
   font-size: 40px;
+  margin-top: 20px;
+  margin-left: 30px;
   color: var(--txt-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
 }
