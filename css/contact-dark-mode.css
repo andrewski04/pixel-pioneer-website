@@ -103,7 +103,6 @@ body {
 }
 
 header {
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -121,7 +120,6 @@ nav {
   position: sticky;
   top: 0;
   box-sizing: border-box;
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -180,7 +178,7 @@ nav a:hover, nav a:active, .current {
   padding: 0;
 }
 
-section {
+div {
   text-align: center;
 }
 
@@ -273,7 +271,6 @@ body {
 }
 
 header {
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
