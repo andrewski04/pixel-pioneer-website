@@ -1,7 +1,7 @@
 /*
 	Author:				    Pixel Pioneers (Andrew, Elvin, Riley, Landon, Roy Robinson Jr III) 
 	Creation Date:		10-31-2023
-	Last revised:		  11-28-2023
+	Last revised:		  12-4-2023
 	Assignment:			  Website Project
 
   Primary Page Author: Landon Stott
@@ -16,6 +16,71 @@
   --button-bg-color: #e8e8e8;
 }
 
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4vw;
+  height: 2.1vw;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.65vw;
+  width: 1.65vw;
+  left: 6%;
+  bottom: 12%;
+  background-color: var(--txt-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--border-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 0.000658vw var(--border-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.85vw);
+  -ms-transform: translateX(1.85vw);
+  transform: translateX(1.85vw);
+  background-color: var(--bg-color);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 1.8vw;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
 .title {
   color: var(--txt-color);
   margin-top: 2%;
@@ -24,7 +89,7 @@
   text-align: center;
 }
 
-#subtitle {
+.subtitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 210%;
   text-align: center;
@@ -56,7 +121,6 @@ body {
 }
 
 header {
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -74,7 +138,6 @@ nav {
   position: sticky;
   top: 0;
   box-sizing: border-box;
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -124,7 +187,7 @@ nav a:hover, nav a:active, .current {
   width: 25%;
 }
 
-section {
+div {
   text-align: center;
 }
 
@@ -251,48 +314,18 @@ footer {
   font-weight: 600;
 }
 
- /* The switch - the box around the slider */
+@media (max-width: 1100px) {
+  /* The switch - the box around the slider */
  .switch {
-  position: relative;
-  display: inline-block;
-  width: 4vw;
-  height: 2.1vw;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--border-color);
-  -webkit-transition: .4s;
-  transition: .4s;
+  width: 5.8vw;
+  height: 2.7vw;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 1.65vw;
-  width: 1.65vw;
+  height: 2vw;
+  width: 2.1vw;
   left: 6%;
   bottom: 12%;
-  background-color: var(--txt-color);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: var(--border-color);
 }
 
 input:focus + .slider {
@@ -300,22 +333,19 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(1.85vw);
-  -ms-transform: translateX(1.85vw);
-  transform: translateX(1.85vw);
-  background-color: var(--bg-color);
+  -webkit-transform: translateX(3vw);
+  -ms-transform: translateX(3vw);
+  transform: translateX(3vw);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 1.8vw;
+  border-radius: 2vw;
 }
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-@media (max-width: 1100px) {
+} 
   .title {
     font-size: 360%;
     margin-bottom: 3%;
@@ -449,17 +479,21 @@ footer {
   font-weight: 600;
 }
 
- /* The switch - the box around the slider */
+ 
+}
+
+@media (max-width: 700px) {
+  /* The switch - the box around the slider */
  .switch {
-  width: 5.8vw;
-  height: 2.7vw;
+  width: 14vw;
+  height: 7vw;
 }
 
 .slider:before {
-  height: 2vw;
-  width: 2.1vw;
+  height: 5.4vw;
+  width: 5.4vw;
   left: 6%;
-  bottom: 12%;
+  bottom: 11%;
 }
 
 input:focus + .slider {
@@ -467,22 +501,20 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(3vw);
-  -ms-transform: translateX(3vw);
-  transform: translateX(3vw);
+  -webkit-transform: translateX(6.9vw);
+  -ms-transform: translateX(6.9vw);
+  transform: translateX(6.9vw);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 2vw;
+  border-radius: 4vw;
 }
 
 .slider.round:before {
   border-radius: 50%;
 } 
-}
 
-@media (max-width: 700px) {
   .title {
     font-size: 400%;
     margin-bottom: 5%;
@@ -630,35 +662,4 @@ footer {
   font-weight: 600;
 }
 
- /* The switch - the box around the slider */
- .switch {
-  width: 14vw;
-  height: 7vw;
-}
-
-.slider:before {
-  height: 5.4vw;
-  width: 5.4vw;
-  left: 6%;
-  bottom: 11%;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 0.000658vw var(--border-color);
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(6.9vw);
-  -ms-transform: translateX(6.9vw);
-  transform: translateX(6.9vw);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 4vw;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-} 
 }

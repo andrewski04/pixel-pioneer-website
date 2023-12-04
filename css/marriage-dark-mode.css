@@ -4,7 +4,7 @@
 		Last revised:		10-31-2023
 		Assignment:			Website Project
 
-        Primary Page Author: Elvin Domingo
+        Primary Page Author: Elvin Domingo Puac
 */
 
 :root {
@@ -156,7 +156,9 @@ nav a:hover, nav a:active, .current {
   border-top: 0;
   border-bottom: 0;
   margin: -10% 0 -3.2% 0;
-  color:var(--txt-color)
+  color:var(--txt-color);
+  text-align: center;
+  font-size: 20px;
 }
   
 #image-container {
