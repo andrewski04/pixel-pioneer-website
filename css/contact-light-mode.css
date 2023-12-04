@@ -100,10 +100,11 @@ body {
   margin: 0 10% 0 10%;
   font-size: 1.03vw;
   font-family: 'Open Sans', sans-serif;
+  color: var(--txt-color);
 }
 
 header {
-  float: center;
+  
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -121,7 +122,6 @@ nav {
   position: sticky;
   top: 0;
   box-sizing: border-box;
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -180,7 +180,7 @@ nav a:hover, nav a:active, .current {
   padding: 0;
 }
 
-section {
+div {
   text-align: center;
 }
 
@@ -191,10 +191,10 @@ section {
 
 .section-two{
   margin: 0 2em;
-  font-size: 130%;
+  font-size: 168%;
   text-align: center;
-  float: left;
 }
+
 
 .review{
   font-family: 'Montserrat', sans-serif;
@@ -274,8 +274,6 @@ body {
 }
 
 header {
-  float: center;
-  background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
   padding: 0;
@@ -313,10 +311,10 @@ nav a {
 }
 
 .section-two{
-  margin: 0 3.7em 0 3.7em;
-  font-size: 145%;
+  margin: 0 3em;
+  font-size: 185%;
   text-align: center;
-  float: left;
+
 }
 
 .review{
@@ -416,24 +414,22 @@ line-height: 1.4em;
 }
 
 .section-two{
-margin: 0 3.7em 0 3.7em;
-font-size: 145%;
-text-align: center;
-float: left;
+  margin: 0 1em;
+  font-size: 240%;
+  line-height: 1.4em;
 }
 
 .review{
 font-family: 'Montserrat', sans-serif;
-font-size: 200%;
+font-size: 350%;
 text-align: center;
 }
 
 footer {
-height: 1.5em;
-padding: 1% 0 0 0;
-margin: -4% 0 0 0;
-font-size: 170%;
-font-weight: 600;
+  height: 1.6em;
+  padding: 0.4em 0 0 0;
+  margin: 0;
+  font-size: 260%;
+  font-weight: 600;
 }
 }
-

@@ -18,8 +18,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 4vw;
+  height: 2.1vw;
 }
 
 /* Hide default HTML checkbox */
@@ -37,7 +37,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #eee;
+  background-color: var(--border-color);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -45,11 +45,11 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
+  height: 1.65vw;
+  width: 1.65vw;
+  left: 6%;
+  bottom: 12%;
+  background-color: #eee;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -59,46 +59,50 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--border-color);
+  box-shadow: 0 0 1px #2196F3;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(1.85vw);
+  -ms-transform: translateX(1.85vw);
+  transform: translateX(1.85vw);
+  background-color: #eee;
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 1.8vw;
 }
 
 .slider.round:before {
   border-radius: 50%;
-}
-
+} 
+    
 .title {
   color: var(--txt-color);
-  margin-top: 10%;
+  margin-top: 2%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 300%;
+  font-size: 350%;
   text-align: center;
 }
-
+    
 .subtitle {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  text-align: center;
+  font-size: 210%;
+ text-align: center;
+  padding-top: 1em;
 }
 
 body {
+  width: 80%;
   background-color: var(--bg-color);
-  float: center;
   margin: 0 10% 0 10%;
+  font-size: 1.03vw;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--txt-color);
 }
 
 header {
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -116,13 +120,13 @@ nav {
   position: sticky;
   top: 0;
   box-sizing: border-box;
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
-  padding: 0.5% 0 1% 0
+  padding: 0.5% 0 1% 0;
+  text-align: center;
 }
-
+  
 nav a {
   border-bottom-left-radius: .3em;
   border-bottom-right-radius: .3em;
@@ -132,38 +136,38 @@ nav a {
   border-top-color: transparent;
   display: inline;
   text-align: center;
-  width: 8em;
   margin-inline: 3.6em;
   font-size: 130%;
   padding: 0.1em;
+  font-weight: 600;
 }
-
+    
 nav a:link, nav a:visited {
   text-decoration: none;
   color: var(--txt-color);
   background-color: transparent;
 }
-
+    
 nav a:hover, nav a:active, .current {
   color: var(--nav-hover-txt-color);
-  background-color: var(--nav-hover-bg-color);
-  border-bottom-color: var(--nav-hover-txt-color);
+  background-color: transparent;
+  border-bottom-color: var(--border-color);
 }
-
+    
 .container {
-  color: var(--txt-color);
   box-sizing: border-box;
-  margin: -10% 0 -3.2% 0;
+  margin: 0;
   border: 0.3em solid var(--border-color);
   border-top: 0;
   border-bottom: 0;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 
 #image-container {
-  width: 100%;
-  max-width: 600px;
+  width: 80%;
   margin: 0 auto;
-
 }
 
 #image-container img {
@@ -174,18 +178,19 @@ nav a:hover, nav a:active, .current {
   padding: 0;
 }
 
-section {
+div {
   text-align: center;
 }
 
 .section-one{
-  margin: 0 2em;
+  margin: 0 0.4em;
   font-size: 168%;
 }
 
 .section-two{
   margin: 0 2em;
-  font-size: 130%;
+  font-size: 168%;
+  text-align: center;
 }
 
 .review{
@@ -194,7 +199,7 @@ section {
   text-align: center;
 }
 
-a{
+a{ 
   color: var(--border-color);
 }
 
@@ -266,7 +271,6 @@ body {
 }
 
 header {
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -327,103 +331,103 @@ footer {
 }
 
 @media(max-width: 700px){
-    /* The switch - the box around the slider */
+  /* The switch - the box around the slider */
 .switch {
-  width: 14vw;
-  height: 7vw;
+width: 14vw;
+height: 7vw;
 }
 
 .slider:before {
-  height: 5.4vw;
-  width: 5.4vw;
-  left: 6%;
-  bottom: 11%;
+height: 5.4vw;
+width: 5.4vw;
+left: 6%;
+bottom: 11%;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(6.9vw);
-  -ms-transform: translateX(6.9vw);
-  transform: translateX(6.9vw);
+-webkit-transform: translateX(6.9vw);
+-ms-transform: translateX(6.9vw);
+transform: translateX(6.9vw);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 4vw;
+border-radius: 4vw;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+border-radius: 50%;
 }
 
 .title {
-  margin-bottom: 5%;
-  font-size: 400%;
+margin-bottom: 5%;
+font-size: 400%;
 }
 
 .subtitle {
-  font-size: 350%;
-  margin-top: -3%;
+font-size: 350%;
+margin-top: -3%;
 }
 
 body {
-  width: 100%;
-  margin: 0;
-  font-size: 2.2vw;
+width: 100%;
+margin: 0;
+font-size: 2.2vw;
 }
 
 header {
-  padding-bottom: 5%;
+padding-bottom: 5%;
 }
 
 .logo {
-  width: 40%;
-  margin: 0 30% 0 30%;
+width: 40%;
+margin: 0 30% 0 30%;
 }
 
 nav {
-  margin: -0.1% 0;
-  padding: 2.5% 0 2.8% 0;
+margin: -0.1% 0;
+padding: 2.5% 0 2.8% 0;
 }
 
 nav a {
-  margin-inline: 0.2em;
-  font-size: 180%;
+margin-inline: 0.2em;
+font-size: 180%;
 }
 
 .container {
-  border: 0.7em solid var(--border-color);
-  border-top: 0;
-  border-bottom: 0;
+border: 0.7em solid var(--border-color);
+border-top: 0;
+border-bottom: 0;
 }
 
 #image-container {
-  width: 80%;
-  margin: 0 auto ;
+width: 80%;
+margin: 0 auto ;
 }
 
 .section-one{
-  margin: 0 3em;
-  font-size: 185%;
+margin: 0 1em;
+font-size: 240%;
+line-height: 1.4em;
 }
 
 .section-two{
-  margin: 0 3.7em 0 3.7em;
-  font-size: 145%;
-  text-align: center;
-  float: left;
+  margin: 0 0.5em;
+  font-size: 210%;
+  line-height: 1.4em;
 }
 
 .review{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 200%;
-  text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-size: 350%;
+text-align: center;
 }
 
 footer {
-  height: 1.5em;
-  padding: 1% 0 0 0;
-  margin: -4% 0 0 0;
-  font-size: 170%;
+  height: 1.6em;
+  padding: 0.4em 0 0 0;
+  margin: 0;
+  font-size: 260%;
   font-weight: 600;
 }
 }
