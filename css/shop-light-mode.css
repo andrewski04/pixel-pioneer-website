@@ -36,9 +36,13 @@
 	width: 80%;
 	background-color: var(--bg-color);
 	margin: 0 10% 0 10%;
+	font-size: 1.03vw;
+	font-family: 'Open Sans', sans-serif;
+	color: var(--txt-color);
   }
-  
+
   header {
+  
 	background-color: var(--nav-bg-color);
 	width: 100%;
 	margin: 0;
@@ -60,6 +64,7 @@
 	width: 100%;
 	margin: 0;
 	padding: 0.5% 0 1% 0;
+	text-align: center;
   }
   
   nav a {
@@ -71,9 +76,10 @@
 	border-top-color: transparent;
 	display: inline;
 	text-align: center;
-	margin-inline: 3.6em;
+	margin-inline: 3.4em;
 	font-size: 130%;
 	padding: 0.1em;
+	font-weight: 600;
   }
   
   nav a:link, nav a:visited {
@@ -87,7 +93,6 @@
 	background-color: transparent;
 	border-bottom-color: var(--border-color);
   }
-  
   .container {
 	box-sizing: border-box;
 	border: 0.3em solid var(--border-color);
