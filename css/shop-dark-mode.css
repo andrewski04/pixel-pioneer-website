@@ -36,7 +36,6 @@
   }
   
   header {
-	float: center;
 	background-color: var(--nav-bg-color);
 	width: 100%;
 	margin: 0;
@@ -54,7 +53,6 @@
 	position: sticky;
 	top: 0;
 	box-sizing: border-box;
-	float: center;
 	background-color: var(--nav-bg-color);
 	width: 100%;
 	margin: 0;
