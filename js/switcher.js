@@ -34,7 +34,11 @@ function updateMode(isDarkMode) {
     // Update URL without reloading
     var newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?mode=' + currentMode;
     window.history.pushState({path: newUrl}, '', newUrl);
+
+    // Dispatch the modeChange event for the imageCycler.js to listen to
+    document.dispatchEvent(new CustomEvent('modeChange', { detail: currentMode }));
 }
+
 
 // Event listener for DOMContentLoaded
 document.addEventListener("DOMContentLoaded", function () {

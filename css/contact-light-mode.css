@@ -1,7 +1,7 @@
 /*
 	Author:				    Pixel Pioneers (Andrew, Elvin, Riley, Landon, Roy Robinson Jr III) 
 	Creation Date:		11-11-2023
-	Last revised:		  11-11-2023
+	Last revised:		  12-4-2023
 	Assignment:			  Website Project
 
   Primary Page Author: Riley Hayden
@@ -104,7 +104,7 @@ body {
 }
 
 header {
-  float: center;
+  
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -122,7 +122,6 @@ nav {
   position: sticky;
   top: 0;
   box-sizing: border-box;
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -181,7 +180,7 @@ nav a:hover, nav a:active, .current {
   padding: 0;
 }
 
-section {
+div {
   text-align: center;
 }
 
@@ -275,8 +274,6 @@ body {
 }
 
 header {
-  float: center;
-  background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
   padding: 0;
