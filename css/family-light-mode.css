@@ -96,6 +96,14 @@ body {
   background-color: var(--bg-color);
   margin: 0 10% 0 10%;
   font-family: 'Open Sans', sans-serif;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
 }
     
 header {
@@ -173,14 +181,14 @@ footer {
 }
 
 p {
-  font-size: 30px;
+  font-size: 200%;
   color: var(--txt-color);
   margin-left: 10px;
   margin-right: 10px;
 }
 
 ul {
-  font-size: 35px;
+  font-size: 300%;
   margin-left: 30px;
   color: var(--txt-color);
 }

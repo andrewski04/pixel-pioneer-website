@@ -97,8 +97,9 @@ body {
   background-color: var(--bg-color);
   margin: 0 10% 0 10%;
   font-family: 'Open Sans', sans-serif;
+  padding: 0;
 }
-    
+
 header {
   float: center;
   background-color: var(--nav-bg-color);
@@ -184,4 +185,11 @@ ul {
   margin-top: 20px;
   margin-left: 30px;
   color: var(--txt-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
 }
