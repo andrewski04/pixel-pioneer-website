@@ -10,7 +10,7 @@ function getParameterByName(name, url = window.location.href) {
 
 // Function to update the navigation links with the current mode
 function updateNavLinksWithMode(currentMode) {
-    var navLinks = document.querySelectorAll('nav a');
+    var navLinks = document.querySelectorAll('a');
     navLinks.forEach(function(link) {
         var originalHref = link.getAttribute('href').split('?')[0]; // Remove existing query parameters
         link.setAttribute('href', originalHref + '?mode=' + currentMode);
