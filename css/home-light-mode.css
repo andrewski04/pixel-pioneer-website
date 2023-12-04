@@ -282,7 +282,7 @@ div {
   margin: 1em 0;
 }
 
-button {
+.buttons {
   background-color: var(--button-bg-color);
   color: var(--txt-color);
   border: 0.1em solid var(--border-color);
@@ -290,13 +290,13 @@ button {
   width: 20%;
 }
 
-button:link, button:visited {
+.buttons:link, .buttons:visited {
   text-decoration: none;
   color: var(--nav-hover-txt-color);
   background-color: var(--nav-bg-color);
 }
 
-button:hover, button:active, .current {
+.buttons:hover, .buttons:active, .current {
   color: var(--nav-hover-txt-color);
   background-color: var(--button-bg-color);
   border-color: var(--border-color);

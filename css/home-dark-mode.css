@@ -218,7 +218,7 @@
     margin: 1em 0;
   }
   
-  button {
+  .buttons {
     background-color: #333333;
     color: var(--txt-color);
     border: 0.1em solid var(--border-color);
@@ -226,13 +226,13 @@
     width: 20%;
   }
   
-  button:link, button:visited {
+  .buttons:link, .buttons:visited {
     text-decoration: none;
     color: var(--nav-hover-txt-color);
     background-color: #333333;
   }
   
-  button:hover, button:active, .current {
+  .buttons:hover, .buttons:active, .current {
     color: var(--nav-hover-txt-color);
     background-color: #333333;
     border-color: var(--border-color);
