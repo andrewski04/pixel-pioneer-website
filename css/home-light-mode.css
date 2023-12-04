@@ -1,7 +1,7 @@
 /*
 	Author:				    Pixel Pioneers (Andrew, Elvin, Riley, Landon, Roy Robinson Jr III) 
 	Creation Date:		10-31-2023
-	Last revised:		  11-28-2023
+	Last revised:		  12-4-2023
 	Assignment:			  Website Project
 
   Primary Page Author: Landon Stott
@@ -89,7 +89,7 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-#subtitle {
+.subtitle {
   font-family: 'Montserrat', sans-serif;
   font-size: 210%;
   text-align: center;
@@ -121,7 +121,6 @@ body {
 }
 
 header {
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -139,7 +138,6 @@ nav {
   position: sticky;
   top: 0;
   box-sizing: border-box;
-  float: center;
   background-color: var(--nav-bg-color);
   width: 100%;
   margin: 0;
@@ -189,7 +187,7 @@ nav a:hover, nav a:active, .current {
   width: 25%;
 }
 
-section {
+div {
   text-align: center;
 }
 
