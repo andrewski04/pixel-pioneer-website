@@ -112,45 +112,45 @@ header {
   width: 20%;
   margin: 0 40% 0 40%;
 }
-    
-nav {
-  color: var(--txt-color);
-  position: sticky;
-  top: 0;
-  box-sizing: border-box;
-  background-color: var(--nav-bg-color);
-  width: 100%;
-  margin: 0;
-  padding: 0.5% 0 1% 0;
-  text-align: center;
-}
-
-nav a {
-  border-bottom-left-radius: .3em;
-  border-bottom-right-radius: .3em;
-  border-bottom: 0.25em solid var(--txt-color);
-  border-top-left-radius: .3em;
-  border-top-right-radius: .3em;
-  border-top-color: transparent;
-  display: inline;
-  text-align: center;
-  margin-inline: 3.4em;
-  font-size: 130%;
-  padding: 0.1em;
-  font-weight: 600;
-}
-
-nav a:link, nav a:visited {
-  text-decoration: none;
-  color: var(--txt-color);
-  background-color: transparent;
-}
-
-nav a:hover, nav a:active, .current {
-  color: var(--nav-hover-txt-color);
-  background-color: transparent;
-  border-bottom-color: var(--border-color);
-}
+      
+  nav {
+    color: var(--txt-color);
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    background-color: var(--nav-bg-color);
+    width: 100%;
+    margin: 0;
+    padding: 0.5% 0 1% 0;
+    text-align: center;
+  }
+  
+  nav a {
+    border-bottom-left-radius: .3em;
+    border-bottom-right-radius: .3em;
+    border-bottom: 0.25em solid var(--txt-color);
+    border-top-left-radius: .3em;
+    border-top-right-radius: .3em;
+    border-top-color: transparent;
+    display: inline;
+    text-align: center;
+    margin-inline: 3.4em;
+    font-size: 130%;
+    padding: 0.1em;
+    font-weight: 600;
+  }
+  
+  nav a:link, nav a:visited {
+    text-decoration: none;
+    color: var(--txt-color);
+    background-color: transparent;
+  }
+  
+  nav a:hover, nav a:active, .current {
+    color: var(--nav-hover-txt-color);
+    background-color: transparent;
+    border-bottom-color: var(--border-color);
+  }
     
 .container {
   box-sizing: border-box;
