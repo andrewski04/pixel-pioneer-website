@@ -154,14 +154,12 @@ header {
   
 .container {
   box-sizing: border-box;
-  margin: -10% 0 -3.2% 0;
+  margin: -10% 0 -3.1% 0;
   border: 0.3em solid var(--border-color);
   border-top: 0;
   border-bottom: 0;
   text-align: center;
   font-size: 20px;
-  padding-top: 1%;
-  padding-bottom: 3%;
 }
 
 #image-container {
@@ -212,7 +210,7 @@ footer {
   height: 2rem;
   text-align: center;
   padding: 1% 0 0 0;
-  margin: -4% 0 0 0;
+  margin: -2% 0 0 0;
   position: static;
   background-color: var(--nav-bg-color);
   color: var(--txt-color);
